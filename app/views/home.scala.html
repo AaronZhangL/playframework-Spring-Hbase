@@ -1,0 +1,27 @@
+@import helper._
+<script type="text/javascript" src="js/script.js"></script>
+<html>
+<head>
+<title>Home</title>
+</head>
+<body>
+
+	<div align="center" class="body">
+		<h1>PLAY TEST</h1>
+	</div>
+	<div align="center" class="body">
+		@form(action = routes.Application.hbaseGet){
+			GET val: <input type="text" name="getvalue">
+			 <input type="submit">
+		}
+		@form(action = routes.Application.hbasePost){
+			POST val: <input type="text" name="postvalue">
+			 <input type="submit">
+		}
+		@form(action = routes.Application.hbaseGetAsyn){
+			GETAsyn val: <input type="text" name="getasynvalue">
+			 <input type="submit">
+		}
+	</div>
+</body>
+</html>
